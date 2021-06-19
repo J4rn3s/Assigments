@@ -1,10 +1,10 @@
-import pygame.mixer
+import pygametest.mixer
 
 def wait_finish(channel):
 	while channel.get_busy():
 		pass
 		
-sounds = pygame.mixer
+sounds = pygametest.mixer
 sounds.init()
 
 correct_s = sounds.Sound("correct.wav")

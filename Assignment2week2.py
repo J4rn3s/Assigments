@@ -16,12 +16,12 @@ if playagame.upper() == "Y" :
 
      if guess == 22:
          print("You're right! Talk to the teacher about the extra point cause I made that up!")
+         print("By now!!")
      else:
         if guess > 22:
             print("Nope, was he that old?, try again")
         else:
             print("Nope, was he this young? try again")
 
-if playagame == "N" :
-
+if playagame.upper() == "N" :
     print("See you around!!")

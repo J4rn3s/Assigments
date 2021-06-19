@@ -13,14 +13,13 @@ def save_data():
  address.delete("1.0", END)
 app = Tk()
 app.title('Head-Ex Deliveries')
+
 Label(app, text = "Depot:").pack()
 depot = StringVar()
 depot.set(None)
-OptionMenu(app,depot, "Mammoth-CA - USA", "BigBear-CA - USA", "SnowSummit-CA - USA", "Whistler-BC - CA").pack()
-
-##Radiobutton(app, variable = depot, text = "Mammoth, CA - USA", value = "Mammoth, CA - USA").pack()
-#Radiobutton(app, variable = depot, text = "Big Bear, CA - USA", value = "Big Bear, CA - USA").pack()
-#Radiobutton(app, variable = depot, text = "SnowSummit, CA - USA", value = "SnowSummit, CA - USA").pack()
+Radiobutton(app, variable = depot, text = "Mammoth, CA - USA", value = "Mammoth, CA - USA").pack()
+Radiobutton(app, variable = depot, text = "Big Bear, CA - USA", value = "Big Bear, CA - USA").pack()
+Radiobutton(app, variable = depot, text = "SnowSummit, CA - USA", value = "SnowSummit, CA - USA").pack()
 
 Label(app, text = "Description:").pack()
 description = Entry(app)
